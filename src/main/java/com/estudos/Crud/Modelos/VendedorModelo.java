@@ -25,11 +25,6 @@ public class VendedorModelo extends RepresentationModel<VendedorModelo> implemen
     private String tel;
     private double comissao;
 
-    public VendedorModelo(String nome, String tel, double comissao) {
-        this.nome = nome;
-        this.tel = tel;
-        this.comissao = comissao;
-    }
     
     public UUID getIdVendedor() {
         return idVendedor;
@@ -55,6 +50,7 @@ public class VendedorModelo extends RepresentationModel<VendedorModelo> implemen
     public void setComissao(double comissao) {
         this.comissao = comissao;
     }
+    
 
     @Override
     public int hashCode() {
@@ -80,6 +76,8 @@ public class VendedorModelo extends RepresentationModel<VendedorModelo> implemen
             return false;
         return true;
     }
+
+
 
     
 }
